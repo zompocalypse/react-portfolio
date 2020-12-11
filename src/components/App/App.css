@@ -1,0 +1,461 @@
+html,
+body,
+main {
+  margin: 0;
+  font-family: Calibre, 'San Francisco', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+header {
+  background: url('../../assets/color_bg.jpg');
+  height: 100vh;
+  background-color: #08061a;
+  background-size: cover;
+}
+
+.callme-text {
+  font-size: 9em;
+  margin: auto 0;
+  font-variant: small-caps;
+  font-weight: bold;
+  opacity: 0.2;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.callme {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+
+.callme p:nth-child(1) {
+  color: #050923;
+  margin-top: -75px;
+}
+.callme p:nth-child(2) {
+  color: #5a7e22;
+}
+.callme p:nth-child(3) {
+  color: #8f8057;
+}
+.callme p:nth-child(4) {
+  color: #b15d70;
+}
+.callme p:nth-child(5) {
+  color: #22779b;
+}
+.callme p:nth-child(6) {
+  color: #050923;
+}
+.callme p:nth-child(7) {
+  color: #5a7e22;
+}
+.callme p:nth-child(8) {
+  color: #8f8057;
+}
+.callme p:nth-child(9) {
+  color: #b15d70;
+}
+
+.text {
+  font-size: 2em;
+  color: white;
+  font-variant: small-caps;
+  font-weight: normal;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin: 0 0 0 20px;
+  -webkit-font-smoothing: antialiased;
+  width: 75%;
+}
+
+.name {
+  color: orange;
+}
+
+/* main section */
+#about,
+#projects,
+footer {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+#about {
+  height: 100vh;
+}
+
+#about {
+  background-color: #23221f;
+  color: #fff;
+}
+
+#contact {
+  margin: 0 0 20px 0;
+}
+
+.footer {
+  background-color: orange;
+  height: 100%;
+  justify-content: center;
+}
+
+.about-title,
+.projects-title,
+.contact-title {
+  font-size: 2em;
+  color: orange;
+  font-variant: small-caps;
+  font-weight: normal;
+  margin: 0 0 20px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.about-text,
+.about-list {
+  text-align: left;
+}
+
+.about-text {
+  margin: 0 20px;
+  font-size: 1.2em;
+  font-variant: small-caps;
+}
+
+.me-image {
+  position: absolute;
+  bottom: -12%;
+  left: -10%;
+  width: 100%;
+  mix-blend-mode: lighten;
+}
+
+.projects-single {
+  width: 95%;
+  height: 200px;
+}
+
+.header-bar {
+  background: #444649;
+  height: 4px;
+  margin: 25px 0 25px 0;
+  width: 70px;
+}
+
+/* Form styles */
+.contact-form {
+  margin: 20px auto 0 auto;
+  min-width: 95%;
+}
+
+.contact-intro {
+  font-variant: small-caps;
+  color: #22779b;
+}
+
+.form-email,
+.form-name,
+.form-message {
+  border: 0;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 12pt;
+  margin-bottom: 3px;
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+label {
+  text-align: left;
+  padding: 0 0 0 10px;
+  background-color: #fff;
+  font-variant: small-caps;
+}
+
+.contact-button {
+  border: 2px solid orange;
+  background-color: #fff;
+  color: orange;
+  padding: 10px 40px;
+  margin: 10px 0 0 0;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.contact-button:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+.icon-group {
+  margin: 0 auto;
+}
+
+.icons {
+  height: 40px;
+  margin: 20px;
+}
+
+.copy {
+  color: #fff;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+/* Next Section Buttons */
+.chevron-btn {
+  background: 0;
+  border: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  /* opacity: 0.5; */
+  margin: auto;
+  text-align: center;
+  outline: 0;
+  overflow: visible;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  text-transform: none;
+}
+
+.chevron-btn:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.chevron-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.chevron-btn-circle,
+.chevron-btn-circleShadow {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.chevron-btn-circleShadow {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: translateX(-10%) rotate(-180deg);
+  -ms-transform: translateX(-10%) rotate(-180deg);
+  transform: translateX(-10%) rotate(-180deg);
+}
+
+.chevron-btn-circle {
+  background-color: #fff;
+}
+
+.chevron-btn:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.chevron-btn-wrapper:hover {
+  box-shadow: 5px 5px 5px;
+}
+
+.chevron-btn:hover .chevron-btn-circleShadow {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.chevron-btn-circleShadow-c1 {
+  background-color: #22779b;
+  -webkit-transition-delay: 70ms;
+  -o-transition-delay: 70ms;
+  transition-delay: 70ms;
+}
+
+.chevron-btn:hover .chevron_btn-circleShadow-c1 {
+  background-color: #22779b;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.chevron-btn-circleShadow-c2 {
+  background-color: pink;
+  -webkit-transition-delay: 0.12s;
+  -o-transition-delay: 0.12s;
+  transition-delay: 0.12s;
+}
+
+.chevron-btn:hover .chevron_btn-circleShadow-c2 {
+  background-color: pink;
+  -webkit-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.chevron-btn-circleShadow-c3 {
+  background-color: orange;
+}
+
+.chevron-btn:hover .chevron-btn-circleShadow-c3 {
+  background-color: orange;
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.chevron-btn-label {
+  position: relative;
+  font-size: 1.5em;
+  margin: 8px 0 0 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #000;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.chevron-btn:hover .chevron-btn-label {
+  color: #fff;
+  -webkit-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+@media all and (min-width: 325px) {
+  #about,
+  #projects {
+    height: 100vh;
+  }
+}
+
+@media all and (min-width: 600px) {
+  footer {
+    height: 100vh;
+  }
+
+  .text,
+  .about-title,
+  .projects-title {
+    font-size: 3em;
+  }
+
+  #about {
+    margin: 0 auto;
+  }
+
+  .about-text {
+    width: 400px;
+    margin: 0 auto 40px;
+  }
+
+  .me-image {
+    width: 75%;
+  }
+
+  #contact {
+    margin: 0 0 125px 0;
+  }
+
+  .contact-form {
+    width: 400px;
+  }
+}
+
+@media all and (min-width: 700px) {
+  .text,
+  .about-title,
+  .projects-title {
+    font-size: 4em;
+  }
+
+  .me-image {
+    width: 70%;
+  }
+
+  .about-text {
+    width: 600px;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .text,
+  .about-title,
+  .projects-title {
+    font-size: 5em;
+  }
+
+  .me-image {
+    width: 50%;
+    bottom: -15%;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .me-image {
+    width: 47%;
+    bottom: -10%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .me-image {
+    width: 35%;
+    left: -5%;
+  }
+}
