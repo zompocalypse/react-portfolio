@@ -147,12 +147,73 @@ footer {
   mix-blend-mode: lighten;
 }
 
+/* Project section */
 .projects-single {
-  width: 95%;
-  height: 200px;
+  flex: 1;
+  position: relative;
+  background-color: orange;
+  max-height: 213px;
 }
 
-.header-bar {
+.projects-single img {
+  width: 100%;
+  transition: all 0.5s;
+}
+.projects-single:hover img {
+  opacity: 0.1;
+}
+
+.single-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.5s;
+  color: #fff;
+  z-index: 2;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+.single-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.5s;
+  color: #fff;
+  z-index: 2;
+  width: 100%;
+  background-color: #444649;
+}
+
+.single-links p {
+  margin: 0;
+  bottom: 0;
+  padding: 10px 0;
+}
+
+.single-links a {
+  text-decoration: none;
+  font-variant: small-caps;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.projects-single:hover .single-title {
+  opacity: 1;
+  top: 10%;
+}
+
+.projects-single:hover .single-links {
+  opacity: 1;
+  bottom: 10%;
+}
+
+.project-single .header-bar {
   background: #444649;
   height: 4px;
   margin: 25px 0 25px 0;
@@ -377,13 +438,30 @@ label {
 }
 
 @media all and (min-width: 325px) {
-  #about,
-  #projects {
+  #about {
     height: 100vh;
+  }
+  .projects-single {
+    max-height: 250px;
   }
 }
 
 @media all and (min-width: 600px) {
+  #projects {
+    height: 100vh;
+  }
+
+  .projects-row.flex {
+    flex-direction: row;
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .projects-all {
+    margin: 10%;
+  }
+
   footer {
     height: 100vh;
   }
