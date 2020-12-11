@@ -6,13 +6,14 @@ export default class Header extends Component {
     return (
       <section className="footer flex">
         <div className="flex-row icon-group">
-          <a href="mailto:jason.stankevich@gmail.com">
+          <a href="mailto:jason.stankevich@gmail.com" aria-label="Email">
             <img className="icons" src={images.email} alt="Email icon" />
           </a>
           <a
             href="https://github.com/zompocalypse"
             target="_blank"
             rel="noreferrer"
+            aria-label="GitHub"
           >
             <img className="icons" src={images.github} alt="GitHub icon" />
           </a>
@@ -20,6 +21,7 @@ export default class Header extends Component {
             href="https://www.linkedin.com/in/jason-stankevich/"
             target="_blank"
             rel="noreferrer"
+            aria-label="LinkedIn"
           >
             <img className="icons" src={images.linkedin} alt="LinkedIn icon" />
           </a>

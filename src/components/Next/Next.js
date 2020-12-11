@@ -10,7 +10,7 @@ export default class Next extends Component {
   };
   render() {
     return (
-      <Link smooth to={this.props.to}>
+      <Link smooth to={this.props.to} aria-label="scroll down">
         <button className="chevron-btn">
           <div className="chevron-btn-wrapper">
             <div className="chevron-btn-circle"></div>
