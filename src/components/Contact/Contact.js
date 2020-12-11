@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Next from '../Next/Next';
 import { Button, Input, Textarea } from '../Utils/Utils';
 
 export default class Contact extends Component {
