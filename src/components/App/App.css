@@ -99,10 +99,6 @@ footer {
 }
 
 #about {
-  height: 100vh;
-}
-
-#about {
   background-color: #23221f;
   color: #fff;
 }
@@ -137,6 +133,13 @@ footer {
   margin: 0 20px;
   font-size: 1.2em;
   font-variant: small-caps;
+}
+
+.hit-me-up {
+  text-decoration: none;
+  color: orange;
+  font-weight: bolder;
+  font-size: 1.1em;
 }
 
 .me-image {
@@ -441,6 +444,7 @@ label {
   #about {
     height: 100vh;
   }
+  
   .projects-single {
     max-height: 250px;
   }

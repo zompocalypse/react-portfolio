@@ -12,15 +12,25 @@ export default class About extends Component {
           <div className="about-text">
             I am a full-stack web developer living in of Gainesville, Florida
             specializing in building wonderful websites, amazing applications,
-            and anything in between. After spending 18 years in customer-facing
-            roles and leading customer-facing teams, I developed a knack for:
+            and anything in between. I have a passion for using CSS creatively,
+            developing intuative user experiences, and and cleanly organized
+            servers. After spending 18 years in customer-facing roles and
+            leading customer-facing teams, I developed a knack for understanding
+            and being empathetic towards colleagues and customers.
+          </div>
+          <div className="about-text">
+            If you are looking for a well rounded developer with a myriad of
+            qualifications,{' '}
+            <a href="#contact" className="hit-me-up">
+              hit me up
+            </a>
+            .
             <ul className="about-list">
               <li>
-                Understanding and being empathetic towards colleagues and
-                customers
+                React, CSS, HTML, Node.js, Express, PostgreSQL, Typescript
               </li>
-              <li>Believing every customer matters</li>
-              <li>Learning from every interaction</li>
+              <li>Leadership, empathy, and creative problem solving</li>
+              <li>Life-long learner, avid hiker, and book worm</li>
             </ul>
           </div>
           <img
