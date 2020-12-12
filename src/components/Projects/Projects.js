@@ -76,7 +76,9 @@ export default class Projects extends Component {
               <img src={images.gofish} alt="screenshot of Autolearn App" />
               <div className="single-title">
                 <p>Go Fish</p>
-                <p>React, HTML, CSS, Node.js, Express, PostgreSQL, socket.io</p>
+                <p className="single-skills">
+                  React, HTML, CSS, Node.js, Express, PostgreSQL, socket.io
+                </p>
               </div>
               <div className="single-links">
                 <a

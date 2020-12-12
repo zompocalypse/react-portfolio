@@ -10,10 +10,10 @@ export default class About extends Component {
         <div className="header-bar"></div>
         <div className="flex about-me">
           <div className="about-text">
-            I am a full-stack web developer living in of Gainesville, Florida
+            I am a full-stack web developer living in Gainesville, Florida
             specializing in building wonderful websites, amazing applications,
             and anything in between. I have a passion for using CSS creatively,
-            developing intuative user experiences, and and cleanly organized
+            developing intuitive user experiences, and cleanly organized
             servers. After spending 18 years in customer-facing roles and
             leading customer-facing teams, I developed a knack for understanding
             and being empathetic towards colleagues and customers.

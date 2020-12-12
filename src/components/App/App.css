@@ -17,58 +17,9 @@ main {
 }
 
 header {
-  background: url('../../assets/color_bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url('../../assets/color_bg.jpg') no-repeat center center / cover;
   height: 100vh;
-  background-color: #08061a;
-  background-size: cover;
-}
-
-.callme-text {
-  font-size: 9em;
-  margin: auto 0;
-  font-variant: small-caps;
-  font-weight: bold;
-  opacity: 0.2;
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
-}
-
-.callme {
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: clip;
-}
-
-.callme p:nth-child(1) {
-  color: #050923;
-  margin-top: -75px;
-}
-.callme p:nth-child(2) {
-  color: #5a7e22;
-}
-.callme p:nth-child(3) {
-  color: #8f8057;
-}
-.callme p:nth-child(4) {
-  color: #b15d70;
-}
-.callme p:nth-child(5) {
-  color: #22779b;
-}
-.callme p:nth-child(6) {
-  color: #050923;
-}
-.callme p:nth-child(7) {
-  color: #5a7e22;
-}
-.callme p:nth-child(8) {
-  color: #8f8057;
-}
-.callme p:nth-child(9) {
-  color: #b15d70;
 }
 
 .text {
@@ -108,7 +59,7 @@ footer {
 }
 
 .footer {
-  background-color: orange;
+  background-color: #22779b;
   height: 100%;
   justify-content: center;
 }
@@ -117,7 +68,7 @@ footer {
 .projects-title,
 .contact-title {
   font-size: 2em;
-  color: orange;
+  color: #22779b;
   font-variant: small-caps;
   font-weight: normal;
   margin: 0 0 20px;
@@ -133,6 +84,7 @@ footer {
   margin: 0 20px;
   font-size: 1.2em;
   font-variant: small-caps;
+  line-height: 1.5em;
 }
 
 .hit-me-up {
@@ -154,7 +106,7 @@ footer {
 .projects-single {
   flex: 1;
   position: relative;
-  background-color: orange;
+  background-color: #22779b;
   max-height: 213px;
 }
 
@@ -177,6 +129,7 @@ footer {
   z-index: 2;
   font-variant: small-caps;
   font-weight: bold;
+  font-size: 1.1em;
 }
 
 .single-links {
@@ -264,9 +217,9 @@ label {
 }
 
 .contact-button {
-  border: 2px solid orange;
+  border: 2px solid #22779b;
   background-color: #fff;
-  color: orange;
+  color: #22779b;
   padding: 10px 40px;
   margin: 10px 0 0 0;
   font-size: 1.2em;
@@ -276,7 +229,7 @@ label {
 }
 
 .contact-button:hover {
-  background-color: orange;
+  background-color: #22779b;
   color: #fff;
 }
 
@@ -376,14 +329,14 @@ label {
 }
 
 .chevron-btn-circleShadow-c1 {
-  background-color: #22779b;
+  background-color: orange;
   -webkit-transition-delay: 70ms;
   -o-transition-delay: 70ms;
   transition-delay: 70ms;
 }
 
 .chevron-btn:hover .chevron_btn-circleShadow-c1 {
-  background-color: #22779b;
+  background-color: orange;
   -webkit-transition-delay: 0s;
   -o-transition-delay: 0s;
   transition-delay: 0s;
@@ -404,11 +357,11 @@ label {
 }
 
 .chevron-btn-circleShadow-c3 {
-  background-color: orange;
+  background-color: #22779b;
 }
 
 .chevron-btn:hover .chevron-btn-circleShadow-c3 {
-  background-color: orange;
+  background-color: #22779b;
   -webkit-transition-delay: 0.2s;
   -o-transition-delay: 0.2s;
   transition-delay: 0.2s;
@@ -444,9 +397,9 @@ label {
   #about {
     height: 100vh;
   }
-  
+
   .projects-single {
-    max-height: 250px;
+    max-height: 266px;
   }
 }
 
@@ -472,7 +425,8 @@ label {
 
   .text,
   .about-title,
-  .projects-title {
+  .projects-title,
+  .contact-title {
     font-size: 3em;
   }
 
@@ -501,7 +455,8 @@ label {
 @media all and (min-width: 700px) {
   .text,
   .about-title,
-  .projects-title {
+  .projects-title,
+  .contact-title {
     font-size: 4em;
   }
 
@@ -517,8 +472,14 @@ label {
 @media all and (min-width: 900px) {
   .text,
   .about-title,
-  .projects-title {
+  .projects-title,
+  .contact-title {
     font-size: 5em;
+  }
+
+  .projects-row.flex {
+    width: 800px;
+    height: 266px;
   }
 
   .me-image {

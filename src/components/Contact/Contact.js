@@ -26,7 +26,7 @@ export default class Contact extends Component {
     const { error } = this.state;
     return (
       <section id="contact">
-        <h2 className="contact-title">Contact Me</h2>
+        <h2 className="contact-title">contact me</h2>
         <div className="header-bar"></div>
         <div className="contact-intro">
           have questions? want to work with me?
